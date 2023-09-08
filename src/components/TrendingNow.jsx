@@ -11,19 +11,15 @@ class TrendingNow extends Component {
       const resp = await fetch("http://www.omdbapi.com/?apikey=d29d9bb8&s=harry%20potter");
       if (resp.ok) {
         const data = await resp.json();
-        console.log("data", data);
+
         this.setState({ Search: data.Search });
-        console.log("setState", this.setState);
       }
     } catch (error) {
       console.log(error);
     }
-    console.log(this.state);
   };
 
   componentDidMount = () => {
-    console.log("COMPONENT DID MOUNT");
-
     this.fetchSaga();
   };
   render() {
