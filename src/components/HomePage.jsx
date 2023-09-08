@@ -1,5 +1,4 @@
 import { Container, Dropdown } from "react-bootstrap";
-import MyNav from "./MyNav";
 import TrendingNow from "./TrendingNow";
 import WhatchAgain from "./WhatchAgain";
 import NewRelease from "./NewRelease";
@@ -7,7 +6,6 @@ import MyFooter from "./MyFooter";
 
 const HomePage = () => (
   <>
-    <MyNav />
     <Container fluid>
       <div class="d-flex justify-content-between">
         <div className="d-flex">
