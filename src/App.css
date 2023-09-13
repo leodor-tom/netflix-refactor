@@ -38,7 +38,11 @@ footer {
 .App-link {
   color: #61dafb;
 }
-
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: white;
+  font-weight: 600;
+}
 .footer-icon {
   font-size: 1.3em;
   margin-left: 1%;

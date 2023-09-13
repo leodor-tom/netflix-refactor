@@ -3,12 +3,12 @@ import TrendingNow from "./TrendingNow";
 import WhatchAgain from "./WhatchAgain";
 import NewRelease from "./NewRelease";
 
-const HomePage = () => (
+const TvShows = () => (
   <>
     <Container fluid>
       <div class="d-flex justify-content-between">
         <div className="d-flex">
-          <h2 className="mb-4">Movies</h2>
+          <h2 className="mb-4">TV Shows</h2>
           <Dropdown className="ms-4 mt-1">
             <Dropdown.Toggle
               className="btn btn-secondary btn-sm dropdown-toggle rounded-0"
@@ -51,10 +51,10 @@ const HomePage = () => (
         </div>
       </div>
     </Container>
-    <TrendingNow fetch="harry%20potter" />
-    <WhatchAgain fetch="lord%20of%20the%20rings" />
-    <NewRelease fetch="avengers" />
+    <TrendingNow fetch="series" />
+    <WhatchAgain fetch="series" />
+    <NewRelease fetch="series" />
   </>
 );
 
-export default HomePage;
+export default TvShows;
